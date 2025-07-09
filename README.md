@@ -1,12 +1,21 @@
-# React + Vite
+# 🐶 Dog Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React app lets users discover random dogs using TheDogAPI. Each dog displays consistent attributes (breed, temperament, and lifespan) along with an image. Users can ban specific attribute values to filter future results.
 
-Currently, two official plugins are available:
+## ✅ Features Completed
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] A button fetches new dog data via an API call on each click.
+- [x] At least **three attributes** (breed name, temperament, lifespan) and an image are shown for each dog.
+- [x] Only **one dog is displayed at a time**.
+- [x] Displayed attributes **match the displayed image** (i.e., dog image matches its name and traits).
+- [x] Each API result includes **at least one image**.
+- [x] API results appear **random** to the user.
+- [x] Clicking the "Discover" button shows a **seemingly random new dog** (with minimal repeats).
+- [x] At least **one attribute per result is clickable** (temperament and breed are clickable).
+- [x] Clicking on an attribute adds it to the **ban list**.
+- [x] Clicking a value **already in the ban list removes it**.
+- [x] If an attribute value is banned, **dogs with that value will not appear again** in API results.
 
-## Expanding the ESLint configuration
+## 🎥 Demo GIF
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Demo](./demo.gif)
